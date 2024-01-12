@@ -7,8 +7,8 @@
 }
 
 .myimage{
-    width: 50vh;
-    height: 50vh;
+    width: 50vw;
+    height: 55vh;
     border: 2px solid rgb(6, 6, 99);
     border-radius: 2px;
 }
@@ -43,3 +43,9 @@
 
 }
 
+.btns{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:30px;
+}

@@ -31,7 +31,7 @@ function App() {
         <div className='selected_image'>
           <img src={selectedImage} alt="Selected" style={{width:'500px',height:'300px'}}/>
         </div>
-      )}
+         )}
           </div>
           <div className='mystyle'>
           <label htmlFor='file' className="custom-file-input">Choose file</label>
