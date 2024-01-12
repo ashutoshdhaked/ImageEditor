@@ -3,6 +3,8 @@ import { getEditorDefaults } from '@pqina/pintura';
 import {useState} from 'react';
 import '@pqina/pintura/pintura.css';
 import './EditComponent.css';
+import { ToastContainer, toast } from 'react-toastify';
+  import 'react-toastify/dist/ReactToastify.css';
 
  const EditComponent = (props)=>{
     const [inlineResult, setInlineResult] = useState();
@@ -21,16 +23,19 @@ import './EditComponent.css';
     return(
         <>
         <div style={{height: '100vh'}}>
+        <ToastContainer/>
             <PinturaEditor
                 {...getEditorDefaults()}
                 src={imagefile}
-                onProcess={(res) =>
-                    setInlineResult(URL.createObjectURL(res.dest))
+                onProcess={(res) =>{
+                     toast.success("your image is edited !!");
+                    setInlineResult(URL.createObjectURL(res.dest));
+                    }
                 }
             />   
         </div>
-        <div style={{display:'flex', justifyContent:'center',alignItems:'center', height:'50vh', margin:'10vh'}}>
-        {inlineResult ? 
+        <div className='imagesection'>
+          {inlineResult ? 
            <div className='download_section'>
            <img src={inlineResult} alt="edited_image" className='myimage'/>
            <button onClick={download} className='downloadbtn'>Download</button>
