@@ -1,0 +1,58 @@
+.mydiv{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+   height: 100vh;
+   gap: 30px;
+}
+
+.mybtn{
+  display: none;
+}
+
+.custom-file-input {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border: 2px solid #3498db;
+  color: #3498db;
+  border-radius: 5px;
+  background-color: white;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.custom-file-input:hover {
+  background-color: #3498db;
+  color: white;
+}
+
+.selected_image{
+ width: auto;
+ height: 20%;
+}
+
+.imagebg{
+  padding: 2px;
+}
+
+.mystyle{
+  display: flex;
+  gap: 30px;
+}
+
+.editbtn{
+  all: unset;
+  border: 2px solid green;
+  color: green;
+  padding: 10px 35px;
+  border-radius: 5px;
+}
+
+.editbtn:hover{
+  padding: 10px 35px;
+  border-radius: 5px;
+  color: white;
+  background-color: green;
+}

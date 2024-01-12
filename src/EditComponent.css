@@ -1,0 +1,36 @@
+.myimage{
+    width: 50vh;
+    height: 50vh;
+    border: 2px solid rgb(6, 6, 99);
+    border-radius: 2px;
+}
+
+.download_section{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+.downloadbtn{
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: rgb(10, 10, 132);
+    border: 2px solid rgb(10, 10, 132);
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+.downloadbtn:hover{
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    background-color: rgb(10, 10, 132);
+    border-radius: 5px;
+
+}
